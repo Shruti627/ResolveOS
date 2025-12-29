@@ -9,8 +9,9 @@ import adminRoutes from "./routes/adminRoutes.js";
 import supportRoutes from "./routes/supportRoutes.js";
 // import { createSuperAdmin } from "./seedSuperAdmin.js";
 import authRoutes from "./routes/authRoutes.js";
+import { io } from "socket.io-client";
 dotenv.config();
-
+const socket = io("https://resolveos.onrender.com");
 const app = express();
 app.use(express.json());
 app.use(cors({

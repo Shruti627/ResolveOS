@@ -1,6 +1,7 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:5000/api"; // your backend base URL
+const BASE_URL = "https://resolveos.onrender.com/api";
+
 
 // -------------------- User APIs --------------------
 // Create a new ticket

@@ -1,14 +1,16 @@
-# 🎟️ **ResolveOS – Support Ticket Management System**
-### **A Role-Based Smart Ticketing Platform (Admin • Support • User)**
+# 🎟️ ResolveOS – Support Ticket Management System
+### A Role-Based Smart Ticketing Platform (Admin • Support • User)
 
 **ResolveOS** is a highly scalable, secure, and role-based ticket management system with a **React.js frontend** and **Node.js + Express backend**, connected to **MongoDB** and secured with **JWT Authentication**.  
-The platform supports **Admin**, **Support Engineer**, and **User** workflows with a clean permission-driven architecture. 🚀
+The platform supports **Admin**, **Support Engineer**, and **User** workflows with a clean permission-driven architecture. 🚀  
+
+**🌐 Live Demo:** [https://resolve-os.vercel.app](https://resolve-os.vercel.app)
 
 ---
 
-## ⭐ **Key Highlights**
+## ⭐ Key Highlights
 
-### 🔐 **Authentication & Authorization**
+### 🔐 Authentication & Authorization
 - Secure login & registration using JWT  
 - Role-based access (**user**, **support**, **admin**)  
 - Protected routes using middleware  
@@ -16,7 +18,7 @@ The platform supports **Admin**, **Support Engineer**, and **User** workflows wi
 
 ---
 
-## 🧑‍💻 **Admin Features**
+## 🧑‍💻 Admin Features
 - View all registered users (excluding passwords)  
 - View all tickets with assigned user/support details  
 - Assign tickets to support engineers  
@@ -27,7 +29,7 @@ The platform supports **Admin**, **Support Engineer**, and **User** workflows wi
 
 ---
 
-## 🎧 **Support Engineer Features**
+## 🎧 Support Engineer Features
 - View tickets assigned to them  
 - Update ticket status (`open`, `in-progress`, `resolved`, `closed`)  
 - Add comments to tickets  
@@ -35,7 +37,7 @@ The platform supports **Admin**, **Support Engineer**, and **User** workflows wi
 
 ---
 
-## 🙋 **User Features**
+## 🙋 User Features
 - Create new support tickets  
 - Choose priority & category  
 - View their own ticket history  
@@ -45,7 +47,8 @@ The platform supports **Admin**, **Support Engineer**, and **User** workflows wi
 
 ---
 
-## 🏗️ **Tech Stack**
+## 🏗️ Tech Stack
+
 | Layer | Technology |
 |-------|------------|
 | **Frontend / UI** | React.js (dynamic & responsive interface) |
@@ -57,23 +60,23 @@ The platform supports **Admin**, **Support Engineer**, and **User** workflows wi
 
 ---
 
-## 🔥 **Core Modules**
+## 🔥 Core Modules
 
-### 📌 **Authentication Module**
+### 📌 Authentication Module
 Handles login, registration, token generation & role-based permissions.
 
-### 📌 **Admin Module**
+### 📌 Admin Module
 Manages system-level tasks such as assigning tickets & managing users.
 
-### 📌 **Support Module**
+### 📌 Support Module
 Allows support engineers to resolve tickets, update statuses, and communicate.
 
-### 📌 **Ticket Module**
+### 📌 Ticket Module
 Handles ticket creation, updates, comments, and retrieval.
 
 ---
 
-## 🧠 **Middleware System**
+## 🧠 Middleware System
 
 ### ✔️ `protect`
 Validates JWT and attaches authenticated user to `req.user`.
@@ -81,22 +84,22 @@ Validates JWT and attaches authenticated user to `req.user`.
 ### ✔️ `authorizeRoles`
 Ensures only permitted roles access specific routes.
 
-### 🔒 **Role-wise Access Control**
+### 🔒 Role-wise Access Control
 - **Admin** → manage users, assign tickets  
 - **Support** → update statuses, add comments  
 - **User** → create & view their own tickets  
 
 ---
 
-## 🗂️ **Database Models**
+## 🗂️ Database Models
 
-### 🧍 **User Model**
+### 🧍 User Model
 - `name`  
 - `email`  
 - `password` (hashed)  
 - `role` → `user` | `support` | `admin`  
 
-### 🎫 **Ticket Model**
+### 🎫 Ticket Model
 - `title`, `description`  
 - `priority` → low | medium | high  
 - `status` → open | in-progress | resolved | closed  
@@ -107,11 +110,11 @@ Ensures only permitted roles access specific routes.
 
 ---
 
-## 🧑‍🤝‍🧑 **Team & Contributors**
+## 🧑‍🤝‍🧑 Team & Contributors
 
 | Role | GitHub Username | Name |
-|------|-----------------|------|
-| ⭐ **Team Leader** | **@Shruti627** | **Shruti P. Sangvikar** |
+|------|----------------|------|
+| ⭐ Team Leader | **@Shruti627** | Shruti P. Sangvikar |
 | 👨‍💻 Collaborator | **@Atharv342** | Atharv |
 | 👨‍💻 Collaborator | **@NinadUbale** | Ninad Ubale |
 | 👨‍💻 Collaborator | **@Sham1718** | Sham |
@@ -120,7 +123,7 @@ Ensures only permitted roles access specific routes.
 
 ---
 
-## 🚀 **Features Summary (Quick Peek)**
+## 🚀 Features Summary (Quick Peek)
 - 🔒 JWT Auth  
 - 👥 Three roles with strict permission layers  
 - 🎫 Ticket lifecycle management  
@@ -132,7 +135,7 @@ Ensures only permitted roles access specific routes.
 
 ---
 
-# 📄 **License**
+## 📄 License
 
 This project is created for academic purposes by the ResolveOS team.  
 It can be used for learning, research, and non-commercial use only.  
